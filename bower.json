@@ -1,0 +1,15 @@
+{
+  "name": "designMock",
+  "authors": [
+    "ftf1206 <ftf1206@gmail.com>"
+  ],
+  "description": "Bootstrap css sass(scss) js plugins",
+  "main": "index.html",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": ""
+}
