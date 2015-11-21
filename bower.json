@@ -11,5 +11,12 @@
     "node"
   ],
   "license": "MIT",
-  "homepage": ""
+  "homepage": "",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "~1.4.8",
+    "bootstrap": "~3.3.5",
+    "bootstrap-autohidingnavbar": "~1.0.4",
+    "font-awesome": "fontawesome#~4.4.0"
+  }
 }

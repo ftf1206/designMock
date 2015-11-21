@@ -1,0 +1,14 @@
+
+/* padding-top */
+
+.padding-top-sm {
+    padding-top: 15px;
+}
+.padding-top-md {
+    padding-top: 30px;
+}
+
+/* header */
+#header-f {
+    height: 90px;
+}
