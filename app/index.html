@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" ng-app="webApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +10,25 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="./css/style-f.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./css/main.css" media="screen" title="no title" charset="utf-8">
 
     <!-- JS -->
     <script src="./bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
     <script src="./bower_components/angular/angular.min.js" charset="utf-8"></script>
     <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
     <script src="./bower_components/bootstrap-autohidingnavbar/dist/jquery.bootstrap-autohidingnavbar.min.js" charset="utf-8"></script>
+
+    <!-- AngularModules -->
+    <script src="./app.js" charset="utf-8"></script>
+    <script src="./bower_components/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
+
+    <!-- AngularController -->
+    <script src="./main/main.controller.js" charset="utf-8"></script>
+    <script src="./watch/watch.controller.js" charset="utf-8"></script>
+    <script src="./watch/child.controller.js" charset="utf-8"></script>
+    <script src="./watch/parent.controller.js" charset="utf-8"></script>
+    <script src="./watch/my.controller.js" charset="utf-8"></script>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,29 +41,27 @@
       <!-- Header -->
       <header class="navbar navbar-inverse navbar-fixed-top">
           <div class="container-fluid">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navList">
-                <span class="sr-only">ToggleNavigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navList">
+                    <span class="sr-only">ToggleNavigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
                   <a href="#" class="navbar-brand">DesignMock</a>
               </div>
               <nav id="navList" class="navbar-collapse collapse" role="navigation">
                   <ul class="nav navbar-nav navbar-right">
-                      <li><a href="#">Link1</a></li>
-                      <li><a href="#">Link2</a></li>
-                      <li><a href="#">Link3</a></li>
-                      <li><a href="#">Link4</a></li>
+                      <!-- <li><a ui-sref="sass">Sass</a></li> -->
+                      <li><a ui-sref="watch">Watch</a></li>
+                      <!-- <li><a href="#">Link4</a></li> -->
                   </ul>
               </nav>
           </div>
-      </header><!-- header -->
+      </header><!-- Header -->
 
       <div class="container-fluid">
-
+          <div ui-view class="padding-top-sm"></div>
       </div>
   </body>
 </html>

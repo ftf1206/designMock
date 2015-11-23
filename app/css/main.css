@@ -1,0 +1,21 @@
+/* ----------padding---------- */
+.padding-top-xs {
+  padding-top: 15px;
+}
+
+.padding-top-sm {
+  padding-top: 30px;
+}
+
+.padding-top-md {
+  padding-top: 45px;
+}
+
+.padding-top-lg {
+  padding-top: 60px;
+}
+
+/* ----------color---------- */
+.danger-color {
+  color: red;
+}

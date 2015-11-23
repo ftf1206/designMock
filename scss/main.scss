@@ -1,0 +1,26 @@
+// import
+@import "setting";
+
+
+/* ----------padding---------- */
+
+.padding-top-xs {
+    padding-top: $padding;
+}
+
+.padding-top-sm {
+    padding-top: $padding * 2;
+}
+
+.padding-top-md {
+    padding-top: $padding * 3;
+}
+
+.padding-top-lg {
+    padding-top: $padding * 4;
+}
+
+/* ----------color---------- */
+.danger-color {
+    color: red;
+}

@@ -1,0 +1,55 @@
+<section role="main">
+    <h4 class="page-header">$broadcat / $emit / $on</h4>
+    <div class="row">
+        <div class="container-fluid">
+            <div ng-controller="ParentController">
+                <p>
+                    親スコープ： {{parentResult}}
+                </p>
+                <div class="row">
+                    <div class="container-fluid">
+                        <div ng-controller="MyController">
+                            <p>
+                                現在スコープ：
+                                <input type="text" ng-model="message">
+                                <button type="button"ng-click="onemit()" class="btn btn-xs btn-success">上位方向に通知</button>
+                                <button type="button"ng-click="onbroad()" class="btn btn-xs btn-danger">下位方向に通知</button>
+                            </p>
+                            <div class="row">
+                                <div class="container-fluid">
+                                    <div ng-controller="Child1Controller">
+                                        子スコープ1：{{child1Result}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <h4 class="page-header">$apply/$$phase/$timeout</h4>
+    <div class="row">
+        <div class="container-fluid">
+            <ul class="list-unstyled">
+                <li>緯度： {{latitude}}</li>
+                <li>経度： {{longitude}}</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section>
+    <h4 class="page-header">$watch</h4>
+    <div class="row">
+        <div class="container-fluid">
+            <form>
+                <input type="number" ng-model="base" placeholder="底辺"> ×
+                <input type="number" ng-model="height" placeholder="高さ"> =
+                <span>{{area}}㎡</span>
+                <input type="button" ng-click="stop()" value="STOP">
+            </form>
+        </div>
+    </div>
+</section>
