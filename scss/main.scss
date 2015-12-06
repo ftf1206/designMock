@@ -1,7 +1,12 @@
 // import
 @import "setting";
 
-
+/* --------- workSpace ------- */
+#box1 {
+    width:100px;
+    height: 100px;
+    background: red;
+}
 /* ----------padding---------- */
 
 .padding-top-xs {
@@ -20,7 +25,42 @@
     padding-top: $padding * 4;
 }
 
+/* ----------margin---------- */
+
+.margin-top-xs {
+    margin-top: $margin;
+}
+
+.margin-top-sm {
+    margin-top: $margin * 2;
+}
+
+.margin-top-md {
+    margin-top: $margin * 3;
+}
+
+.margin-top-lg {
+    margin-top: $margin * 4;
+}
+/* ----------text-size---------- */
+
+.text-size-xs {
+    font-size: $text;
+}
+
+.text-size-sm {
+    font-size: $text * 1.5;
+}
+
+.text-size-md {
+    font-size: $text * 2;
+}
+
+.text-size-lg {
+    font-size: $text * 2.5;
+}
+
 /* ----------color---------- */
 .danger-color {
-    color: red;
+    color: #d71424;
 }

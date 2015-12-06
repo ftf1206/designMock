@@ -1,3 +1,10 @@
+/* --------- workSpace ------- */
+#box1 {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
 /* ----------padding---------- */
 .padding-top-xs {
   padding-top: 15px;
@@ -15,7 +22,41 @@
   padding-top: 60px;
 }
 
+/* ----------margin---------- */
+.margin-top-xs {
+  margin-top: 15px;
+}
+
+.margin-top-sm {
+  margin-top: 30px;
+}
+
+.margin-top-md {
+  margin-top: 45px;
+}
+
+.margin-top-lg {
+  margin-top: 60px;
+}
+
+/* ----------text-size---------- */
+.text-size-xs {
+  font-size: 10px;
+}
+
+.text-size-sm {
+  font-size: 15px;
+}
+
+.text-size-md {
+  font-size: 20px;
+}
+
+.text-size-lg {
+  font-size: 25px;
+}
+
 /* ----------color---------- */
 .danger-color {
-  color: red;
+  color: #d71424;
 }

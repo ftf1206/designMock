@@ -14,12 +14,12 @@ angular.module('webApp', [
                 }
             }
         })
-        .state('watch', {
-            url: '/watch',
+        .state('css', {
+            url: '/css',
             views: {
                 '': {
-                    templateUrl: './watch/watch.html',
-                    controller: 'WatchController as watch'
+                    controller: 'MainController',
+                    templateUrl: './main/css.html'
                 }
             }
         });
